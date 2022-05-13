@@ -1,0 +1,71 @@
+.first-section {
+    background-image: url('../images/bg-pattern-intro-desktop.svg'), linear-gradient(90deg,var(--gradient-intro), var(--gradient-cta));
+    background-position: 20% 53%;
+    background-size: 200%, 100%;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    border-radius: 0 0 0 100px;
+}
+
+/* Logo, Navigation & Sign in */
+
+header {
+    display: flex;
+    width: min(90%, 70rem);
+    margin-inline: auto;
+    padding-top: 4rem;
+    font-size: var(--fs-300);
+    font-family: var(--ff-secondary);
+}
+
+.logo {
+    flex-basis: 15%;
+
+    img {
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+}
+
+nav {
+    flex-basis: 65%;
+    display: flex;
+}
+
+.log {
+    flex-basis: 20%;
+}
+
+main {
+    text-align: center;
+    padding: 8rem 0;
+    font-family: var(--ff-primary);
+
+    h1 {
+        font-size: var(--fs-700);
+        color: var(--neutral-white);
+        font-weight: 600;
+    }
+
+    p {
+        color: var(--neutral-light-gray);
+        font-weight: 300;
+    }
+
+}
+
+@media (max-width:1000px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex-basis: auto;
+    }
+
+    .logo img{
+        width: 6rem;
+        height: 2.5rem;
+    }
+}

@@ -1,0 +1,126 @@
+.flex-container {
+    display: flex;
+    font-family: var(--ff-primary);
+
+    .flex-left, .flex-right {
+        flex-basis: 50%;
+    }
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+
+        .flex-left {
+            flex-basis: 40%;
+        }
+
+        .flex-right {
+            flex-basis: 60%;
+        }
+    }
+
+}
+
+/* Third Section */
+
+.third-section {
+    background-image: url('../images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-color: var(--gradient-body-200);
+    background-position: -60% 80%;
+    height: 26rem;
+    border-radius: 0 100px 0 100px;
+
+    .flex-left {
+
+        position: relative;
+        
+        img {
+            position: absolute;
+            top: -15%;
+            left: 5%;
+        }
+    }
+
+    .flex-right {
+        align-self: center;
+
+        h1 {
+            color: var(--neutral-white);
+            font-weight: 600;
+            font-size: var(--fs-600);
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: var(--neutral-light-gray);
+            padding-right: 13rem;
+        }
+    }
+
+    @media (max-width:1000px) {
+        min-height: 100vh;
+        background-size: 150%;
+        background-position: 50% -12rem;
+
+        .flex-left img {
+            top: -60%;
+            left: 0;
+        }
+
+        .flex-right {
+            text-align: center;
+        }
+
+        .flex-right p {
+            padding: 0 2rem;
+        }
+
+    }
+}
+
+/* Fourth Section */
+
+.fourth-section {
+    margin: 8rem 0;
+
+    .flex-left {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 28%;
+        }
+    }
+
+    .flex-right {
+        align-self: center;
+        padding-top: 5rem;
+        padding-right: 15rem;
+
+        h2 {
+            font-weight: 600;
+            color: var(--primary-headings);
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width:1000px) {
+        margin: 5rem 0;
+
+        .flex-left {
+            margin-bottom: 2rem;
+
+            img {
+                position: unset;
+                content: url('../images/illustration-laptop-mobile.svg')
+            }
+        }
+
+        .flex-right {
+            text-align: center;
+            padding: 0 2.5rem;
+        }
+    }
+
+}

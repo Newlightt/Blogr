@@ -1,4 +1,3 @@
-body {
-    color: rgb(182, 84, 84);
-
-}
+@use './base/index';
+@use './layouts/layout';
+@use './components/buttons';

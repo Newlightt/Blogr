@@ -1,0 +1,149 @@
+.button {
+
+    cursor: pointer;
+    position: relative;
+
+    h2 {
+        font-weight: 400;
+        padding: 0.6rem 1rem 1rem 1rem;
+        text-decoration: none;  
+        font-size: inherit;
+        color: var(--neutral-light-gray);
+    }
+
+    img {
+        display: inline;
+        margin-left: 0.4rem;
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        background-color: var(--neutral-white);
+        padding: 1.5rem 3.5rem 1.5rem 1rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+        transition: all 5s ease-in-out;
+        margin: 0;
+        border-radius: 5%;
+        z-index: 1;
+
+        li {
+            display: block;
+            text-align: left;
+        }
+
+        li a{
+            color: var(--neutral-dark-gray);
+            text-decoration: none;
+            display: block;
+            line-height: 2rem;
+        }
+    }
+}
+
+.button:hover{ 
+    .icon {
+        transform: rotate(180deg);
+    }
+
+    h2 {
+        text-decoration: underline;
+        color: var(--neutral-white);
+    }
+
+    ul {
+        left: 0;
+        display: block;
+        pointer-events: auto;
+
+        li:hover ul {
+            display: block;
+        }
+    }
+
+}
+
+ul li a:hover {
+    font-weight: 700;
+    display: block;
+}
+
+#login {
+    border: none;
+    background-color: unset;
+    color: var(--neutral-light-gray);
+    padding: 0.3rem 1.3rem;
+}
+
+#sign-up {
+    border-radius: 1.5rem;
+    border: thin;
+    padding: 0.5rem 1.8rem;
+    color: var(--primary-cta);
+    font-weight: 500;
+}
+
+    #sign-up:hover {
+        background-color: var(--primary-ctaa);
+        color: var(--neutral-white);
+    }
+
+.CTA {
+    
+    padding: 3rem 0;
+
+    .cta-1 {
+        background-color: var(--neutral-white);
+        padding: 0.6rem 1rem;
+        margin-right: 0.5rem;
+        color: var(--primary-cta);
+        font-weight: 600;
+    }
+
+    .cta-1:hover {
+        background-color: var(--primary-ctaa);
+        color: var(--neutral-white);
+    }
+
+    .cta-2 {
+        border: 1px solid var(--neutral-white);
+        padding: 0.5rem 1rem;
+        color: var(--neutral-white);
+        font-weight: 600;
+    }
+
+    .cta-2:hover {
+        background-color: var(--neutral-white);
+        color: var(--primary-ctaa);
+    }
+
+    a {
+        text-decoration: none;
+        border-radius: 2rem;
+    }
+
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width:1000px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        margin: 0;
+    }
+    .log {
+        display: none;
+        margin: 0;
+    }
+}
+
+
+
+
